@@ -1,216 +1,225 @@
-/* header */
-
-
-/*  */
-
-header {
-    background-color: #120F60;
-    height: 460px;
-}
-
-.tentang {
-    color: #FFFFFF;
-    font: Archivo;
-    font-size: 40px;
-    letter-spacing: -0.5px;
-    line-height: 48px;
-    width: 623px;
-    text-align: left;
-    padding-top: 112px;
-}
-
-.pondok-informatika-a {
-    color: #FFFFFF;
-    font: SFProText;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    line-height: 29px;
-    opacity: 0.7;
-    width: 405px;
-    text-align: left;
-}
-
-.player {
-    position: relative;
-    top: 125px;
-    right: -310px;
-}
-
-@media(max-width:1000px) {
-    .player {
-        right: -210px;
-    }
-}
-
-@media(max-width:850px) {
+    /* header */
+    /*  */
+    
     header {
-        min-height: 600px;
+        background-color: #120F60;
+        height: 460px;
     }
+    
+    .tentang {
+        color: #FFFFFF;
+        font: Archivo;
+        font-size: 40px;
+        letter-spacing: -0.5px;
+        line-height: 48px;
+        text-align: left;
+        padding-top: 112px;
+    }
+    
+    .pondok-informatika-a {
+        color: #FFFFFF;
+        font: SFProText;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        line-height: 29px;
+        opacity: 0.7;
+        text-align: left;
+    }
+    
     .player {
-        right: -110px;
+        padding: 125px 0 0 300px;
     }
-}
-
-video {
-    width: 250px;
-    height: 250px;
-    border-radius: 32px;
-}
-
-.play {
-    cursor: pointer;
-    position: relative;
-    top: -170px;
-    left: 100px;
-    background-color: #3DD4F7;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-}
-
-svg {
-    position: relative;
-    left: 20px;
-    top: -8px;
-}
-
-@media(max-width:780px) {
+    
+    @media(max-width:1000px) {
+        .player {
+            padding: 20px 0 0 0;
+        }
+    }
+    
+    @media(max-width:850px) {
+        header {
+            min-height: 600px;
+        }
+    }
+    
     video {
-        min-width: 300px;
-        min-height: 250px;
+        width: 250px;
+        height: 250px;
         border-radius: 32px;
     }
-    .player {
-        position: static;
-        padding-left: 50px;
+    
+    .play {
+        cursor: pointer;
+        position: relative;
+        top: -170px;
+        left: 100px;
+        background-color: #3DD4F7;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
     }
-}
-
-
-/* fisi misi */
-
-.visi-misi .h3 {
-    color: #123158;
-    font: SFProText;
-    font-size: 20px;
-    letter-spacing: 0.5px;
-    line-height: 24px;
-    text-align: left;
-}
-
-.visi-misi p {
-    color: #123158;
-    font: SFProText;
-    font-size: 20px;
-    letter-spacing: 0.5px;
-    line-height: 24px;
-    width: 325px;
-    text-align: left;
-}
-
-.visi-misi ul li::marker {
-    color: #3DD4F7;
-}
-
-.visi-misi ul li {
-    color: #123158;
-    font: SFProText;
-    font-size: 20px;
-    letter-spacing: 0.63px;
-    line-height: 24px;
-    opacity: 0.8;
-    text-align: left;
-    margin-bottom: 16px;
-}
-
-
-/* section1 */
-
-section {
-    margin-top: 80px;
-}
-
-section .container {
-    padding-left: 90px;
-}
-
-section .container .card {
-    border-style: none;
-}
-
-section .container .card img {
-    background-size: 100%;
-    border-radius: 32px;
-    width: 268px;
-    height: 332px;
-}
-
-section .container .card h5 {
-    padding-top: 40px;
-    color: #123158;
-    font: SFProText;
-    font-size: 28px;
-    letter-spacing: 0.5px;
-    line-height: 34px;
-    text-align: left;
-}
-
-section .container .card h6 {
-    color: #123158;
-    font: SFProText;
-    font-size: 20px;
-    letter-spacing: 0.5px;
-    line-height: 24px;
-    text-align: left;
-}
-
-section .container .card p {
-    color: #123158;
-    font: SFProText;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    line-height: 17px;
-    opacity: 0.8;
-    width: 517px;
-    text-align: left;
-    padding-top: 16px;
-}
-
-
-/* teams */
-
-.Teams {
-    margin-top: 120px;
-}
-
-.Teams .h2 {
-    color: #123158;
-    font: SFProText;
-    font-size: 32px;
-    letter-spacing: -0.5px;
-    line-height: 38px;
-    text-align: left;
-}
-
-.Teams p {
-    color: #123158;
-    font: SFProText;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    line-height: 19px;
-    opacity: 0.8;
-    text-align: left;
-    padding-top: 8px;
-}
-
-.Teams .row .col .card {
-    border-style: none;
-    padding-top: 54px;
-}
-
-.Teams .row .col .card img {
-    background-size: 100%;
-    border-radius: 32px;
-    width: 200px;
-    height: 240px;
-}
+    
+    .icon {
+        position: relative;
+        left: 20px;
+        top: 13px;
+    }
+    
+    @media(max-width:780px) {
+        video {
+            min-width: 300px;
+            min-height: 250px;
+            border-radius: 32px;
+        }
+        .play {
+            top: -170px;
+            left: 130px;
+        }
+        .player {
+            position: static;
+            padding-left: 30px;
+        }
+    }
+    
+    @media(max-width:500px) {
+        .tentang {
+            padding-top: 50px;
+        }
+        video {
+            min-width: 300px;
+            min-height: 250px;
+            border-radius: 32px;
+        }
+        .play {
+            top: -170px;
+            left: 130px;
+        }
+    }
+    /* fisi misi */
+    
+    .visi-misi .h3 {
+        color: #123158;
+        font: SFProText;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        line-height: 24px;
+        text-align: left;
+    }
+    
+    .visi-misi p {
+        color: #123158;
+        font: SFProText;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        line-height: 24px;
+        text-align: left;
+    }
+    
+    .visi-misi ul li::marker {
+        color: #3DD4F7;
+    }
+    
+    .visi-misi ul li {
+        color: #123158;
+        font: SFProText;
+        font-size: 20px;
+        letter-spacing: 0.63px;
+        line-height: 24px;
+        opacity: 0.8;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+    /* section1 */
+    
+    section {
+        margin-top: 80px;
+    }
+    
+    section .container {
+        padding-left: 90px;
+    }
+    
+    @media(max-width:900px) {
+        section .container {
+            padding-left: 0px;
+        }
+    }
+    
+    section .container .card {
+        border-style: none;
+    }
+    
+    section .container .card img {
+        background-size: 100%;
+        border-radius: 32px;
+        width: 268px;
+        height: 332px;
+    }
+    
+    section .container .card h5 {
+        padding-top: 40px;
+        color: #123158;
+        font: SFProText;
+        font-size: 28px;
+        letter-spacing: 0.5px;
+        line-height: 34px;
+        text-align: left;
+    }
+    
+    section .container .card h6 {
+        color: #123158;
+        font: SFProText;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        line-height: 24px;
+        text-align: left;
+    }
+    
+    section .container .card p {
+        color: #123158;
+        font: SFProText;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        line-height: 17px;
+        opacity: 0.8;
+        text-align: left;
+        padding-top: 16px;
+    }
+    /* teams */
+    
+    .Teams {
+        margin-top: 120px;
+        margin-bottom: 150px;
+    }
+    
+    .Teams .h2 {
+        color: #123158;
+        font: SFProText;
+        font-size: 32px;
+        letter-spacing: -0.5px;
+        line-height: 38px;
+        text-align: left;
+    }
+    
+    .Teams p {
+        color: #123158;
+        font: SFProText;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        line-height: 19px;
+        opacity: 0.8;
+        text-align: left;
+        padding-top: 8px;
+    }
+    
+    .Teams .row .col .card {
+        border-style: none;
+        padding-top: 54px;
+    }
+    
+    .Teams .row .col .card img {
+        background-size: 100%;
+        border-radius: 32px;
+        width: 200px;
+        height: 240px;
+    }
