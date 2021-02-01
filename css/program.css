@@ -1,0 +1,48 @@
+header {
+    margin: 0;
+    max-height: 490px;
+}
+
+header .container .heading1 {
+    color: #FFFFFF;
+    font: Archivo;
+    font-size: 40px;
+    letter-spacing: -0.5px;
+    line-height: 48px;
+    text-align: left;
+    padding-top: 119px;
+}
+
+header .container .paragraph {
+    color: #FFFFFF;
+    font: SFProText;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 19px;
+    opacity: 0.7;
+    text-align: left;
+    padding-top: 24px;
+}
+
+
+/* card */
+
+.containe {
+    margin: auto;
+    width: 40%;
+}
+
+.containe img {
+    max-height: 310px;
+}
+
+.sampel {
+    background-color: #F3F9FF;
+    border-radius: 0 0 0;
+}
+
+.sampel .container .card-img {
+    width: 691px;
+    height: 310px;
+    margin: auto;
+}
