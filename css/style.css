@@ -59,7 +59,7 @@
          padding-top: 24px;
          text-align: left;
          letter-spacing: 0.5px;
-         line-height: 19px;
+         line-height: 29px;
      }
      
      header button {
@@ -452,9 +452,9 @@
          top: 95px;
      }
      
-     @media (max-width:800px) {
+     @media (max-width:1000px) {
          section .twogroup {
-             padding-left: 10px;
+             padding: 10px;
          }
          .twogroup .icon-rectangle {
              width: 100px;
@@ -529,8 +529,6 @@
      @media (max-width:800px) {
          .tree-group .row img {
              position: static;
-             left: 0px;
-             top: 0px;
              width: 438px;
              height: 508px;
          }
@@ -542,10 +540,8 @@
      @media (max-width:500px) {
          .tree-group .row img {
              position: static;
-             left: 0px;
-             top: 0px;
-             width: 338px;
-             height: 408px;
+             width: 300px;
+             height: 400px;
          }
          .tree-group {
              padding-top: 80px;

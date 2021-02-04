@@ -1,6 +1,6 @@
 // id html
-var programs = document.getElementById("program");
 var pendaftaran = document.getElementById("pendaftaran");
+var programs = document.getElementById("program");
 var sliderCards = document.getElementById("sliders");
 var tims = document.getElementById("Tim-company");
 // data
@@ -25,6 +25,20 @@ var TIM = [
 
 ]
 
+function HtmlPendaftaran(pro) {
+    return `
+<div class="col">
+<p style="${PENDAFTARAN[pro-1].border} width: 128px; border-radius: 100%; height: 44px;"></p>
+<div class="card icon-rectangle">
+    <i class="${PENDAFTARAN[pro-1].icon} fa-2x m-auto"></i>
+</div>
+<div class="registrasi pt-4">
+    <h5 class="card-title">${PENDAFTARAN[pro-1].title}</h5>
+</div>
+</div>
+`
+}
+
 function HtmlProgram(pro) {
     let Url = `img/programs/program${pro}.png`;
     return `
@@ -40,20 +54,6 @@ function HtmlProgram(pro) {
     </a>
   </div>
      `
-}
-
-function HtmlPendaftaran(pro) {
-    return `
-  <div class="col">
-  <p style="${PENDAFTARAN[pro-1].border} width: 128px; border-radius: 100%; height: 44px;"></p>
-  <div class="card icon-rectangle">
-      <i class="${PENDAFTARAN[pro-1].icon} fa-2x m-auto"></i>
-  </div>
-  <div class="registrasi pt-4">
-      <h5 class="card-title">${PENDAFTARAN[pro-1].title}</h5>
-  </div>
-</div>
-  `
 }
 
 function HtmlTimCompany(pro) {
@@ -72,11 +72,11 @@ function HtmlTimCompany(pro) {
 }
 
 function render() {
-    for (let index = 1; index <= PROGRAM.length; index++) {
-        programs.innerHTML += `${HtmlProgram(index)}`;
-    }
     for (let index = 1; index <= PENDAFTARAN.length; index++) {
         pendaftaran.innerHTML += `${HtmlPendaftaran(index)}`;
+    }
+    for (let index = 1; index <= PROGRAM.length; index++) {
+        programs.innerHTML += `${HtmlProgram(index)}`;
     }
 }
 

@@ -18,7 +18,7 @@ header .container .paragraph {
     font: SFProText;
     font-size: 16px;
     letter-spacing: 0.5px;
-    line-height: 19px;
+    line-height: 29px;
     opacity: 0.7;
     text-align: left;
     padding-top: 24px;
@@ -41,8 +41,20 @@ header .container .paragraph {
     font-size: 40px;
     letter-spacing: -0.5px;
     line-height: 48px;
-    width: 623px;
     text-align: center;
+}
+
+@media(max-width:800px) {
+    .sampel .containe h5 {
+        top: -100px;
+        font-size: 20px;
+    }
+}
+
+@media(max-width:500px) {
+    .sampel .containe h5 {
+        top: -70px;
+    }
 }
 
 
