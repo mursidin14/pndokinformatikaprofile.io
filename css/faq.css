@@ -1,0 +1,70 @@
+/* faq */
+
+.accordion {
+    width: 100%;
+    max-width: 900px;
+    border: 1px solid rgba(18, 49, 88, 0.12);
+    border-radius: 30px;
+}
+
+.accordion-body {
+    position: relative;
+}
+
+.accordion-body h5::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 2rem;
+}
+
+.accordion-body.active h5::after {
+    content: "\2013";
+    font-size: 2rem;
+    position: absolute;
+    right: 2.2rem;
+}
+
+@media(max-width:500px) {
+    .accordion-body h5::after {
+        top: 15px;
+    }
+    .accordion-body.active h5::after {
+        top: 15px;
+    }
+}
+
+.accordion-body .plus {
+    background-color: rgba(18, 49, 88, 0.04);
+    border-radius: 16px;
+    width: 50px;
+    height: 32px;
+    position: absolute;
+    right: 1.2rem;
+    top: 13px;
+    cursor: pointer;
+}
+
+.accordion-body h5 {
+    color: #123158;
+    font: SFProText;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 19px;
+    max-width: 90%;
+}
+
+.accordion .content {
+    background-color: rgba(18, 49, 88, 0.04);
+    color: #123158;
+    font: SFProText;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 27px;
+    border-radius: 0px 0px 30px 30px;
+    display: none;
+}
+
+.accordion-body.active+.accordion-body {
+    display: block;
+}

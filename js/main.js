@@ -1,9 +1,4 @@
 // video
-const tombol = document.querySelector(".main");
-tombol.addEventListener("click", () => {
-    player();
-})
-
 const play = document.querySelector(".main .play");
 
 function player() {
@@ -17,6 +12,10 @@ function player() {
     }
 }
 
+const tombol = document.querySelector(".main");
+tombol.addEventListener("click", () => {
+    player();
+})
 
 // slide
 
