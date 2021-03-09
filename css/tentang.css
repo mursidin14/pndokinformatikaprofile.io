@@ -16,6 +16,12 @@
         padding-top: 112px;
     }
     
+    @media (max-width:800px) {
+        .tentang {
+            padding-top: 100px;
+        }
+    }
+    
     .pondok-informatika-a {
         color: #FFFFFF;
         font: SFProText;
@@ -67,9 +73,8 @@
     
     @media(max-width:780px) {
         video {
-            min-width: 300px;
-            min-height: 250px;
             border-radius: 32px;
+            margin-top: 80px;
         }
         .play {
             top: -170px;
@@ -85,14 +90,19 @@
         .tentang {
             padding-top: 50px;
         }
+        .pondok-informatika-a {
+            max-width: 300px;
+            width: 100%;
+        }
         video {
-            min-width: 300px;
-            min-height: 250px;
             border-radius: 32px;
+            width: 250px;
+            height: 200px;
+            margin-top: 0px;
         }
         .play {
-            top: -170px;
-            left: 130px;
+            top: -140px;
+            left: 110px;
         }
     }
     /* Visi misi */
@@ -141,7 +151,7 @@
     
     @media(max-width:900px) {
         section .container {
-            padding-left: 0px;
+            padding-left: 10px;
         }
     }
     
@@ -190,6 +200,13 @@
     .Teams {
         margin-top: 120px;
         margin-bottom: 150px;
+    }
+    
+    @media(max-width:800px) {
+        .Teams {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
     }
     
     .Teams .h2 {

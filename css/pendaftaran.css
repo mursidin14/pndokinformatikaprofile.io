@@ -5,9 +5,13 @@ header .container .row .ilustrasi {
     height: 430px;
 }
 
-@media(max-width:1000px) {
+header {
+    max-height: 450px;
+}
+
+@media(max-width:800px) {
     header {
-        margin: 0;
+        margin-top: 0;
     }
     header .ilustrasi img {
         width: 250px;
@@ -23,15 +27,23 @@ header .container .row .ilustrasi {
 }
 
 @media(max-width:500px) {
+    header {
+        height: 300px;
+    }
+    header .tentang {
+        padding-top: 50px;
+        font-size: 30px;
+        width: 200px;
+    }
     header .ilustrasi img {
-        width: 150px;
-        height: 200px;
+        width: 130px;
+        height: 180px;
         position: relative;
-        left: 200px;
-        top: 150px;
+        left: 180px;
+        top: 0px;
     }
     header p {
-        width: 150px;
+        width: 100px;
     }
 }
 
@@ -73,16 +85,16 @@ main .container button:focus {
 }
 
 main .container .santri-muslim {
-    color: #FFFFFF;
+    color: #123158;
     font-family: SFProText;
     font-size: 14px;
     letter-spacing: 0.5px;
     line-height: 17px;
     text-align: center;
-    background-color: #3E64FF;
     border-radius: 28px;
     width: 180px;
     height: 46px;
+    opacity: 0.4;
 }
 
 main .container .santri-muslimah {
@@ -96,6 +108,12 @@ main .container .santri-muslimah {
     border-radius: 28px;
     width: 198px;
     height: 46px;
+}
+
+main .container .active {
+    background-color: #3E64FF;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 main .container ul {
@@ -114,4 +132,11 @@ main .container ul li {
 main .container li::marker {
     background-color: #3E64FF;
     border-radius: 100%;
+}
+
+
+/* section */
+
+section .container .h2 {
+    margin-top: 0px;
 }

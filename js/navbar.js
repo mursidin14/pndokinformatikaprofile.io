@@ -14,6 +14,8 @@ const muslim = document.querySelector("main .muslim");
 buttonMuslim.addEventListener("click", () => {
     muslim.style.display = "block";
     muslimah.style.display = "none";
+    buttonMuslim.classList.add("active");
+    buttonMuslimah.classList.remove("active");
 })
 
 const buttonMuslimah = document.querySelector("main .santri-muslimah");
@@ -22,4 +24,6 @@ muslimah.style.display = "none";
 buttonMuslimah.addEventListener("click", () => {
     muslim.style.display = "none";
     muslimah.style.display = "block";
+    buttonMuslim.classList.remove("active");
+    buttonMuslimah.classList.add("active");
 })

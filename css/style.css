@@ -25,7 +25,8 @@
      }
      
      nav .container {
-         width: 1000px;
+         max-width: 1000px;
+         width: 100%;
      }
      
      .navbar-nav li {
@@ -40,16 +41,19 @@
      
      header .container {
          width: 100%;
+         max-width: 1000px;
      }
      
      header h1 {
          font: PublicSans-Bold;
-         font-size: 54px;
+         font-size: 50px;
          padding-top: 173px;
          color: #fff;
          text-align: left;
          line-height: 65px;
          letter-spacing: -0.5px;
+         max-width: 496px;
+         width: 100%;
      }
      
      header p {
@@ -60,15 +64,18 @@
          text-align: left;
          letter-spacing: 0.5px;
          line-height: 29px;
+         max-width: 496px;
+         width: 100%;
      }
      
      header button {
-         margin-top: 40px;
+         margin-top: 30px;
          font: SFProText-Bold;
          border: 1px solid #3E64FF;
          border-radius: 28px;
-         width: 220px;
-         height: 46px;
+         width: 200px;
+         min-height: 46px;
+         height: 100%;
          background-color: #120F60;
          color: #fff;
          font-size: 14px;
@@ -86,8 +93,9 @@
      }
      
      header .image {
-         width: 456px;
-         height: 0px;
+         max-width: 400px;
+         width: 100%;
+         max-height: 654px;
          margin-top: 63px;
      }
      
@@ -99,18 +107,9 @@
          cursor: pointer;
      }
      
-     @media(max-width:1250px) {
-         header .image {
-             width: 400px;
-         }
-     }
-     
      @media(max-width:992px) {
          header {
              height: 700px;
-         }
-         header .image {
-             width: 350px;
          }
      }
      
@@ -122,25 +121,24 @@
              font-size: 30px;
              line-height: 40px;
              padding-top: 80px;
-             margin-left: 30px;
          }
          header p {
              font-size: 8px;
-             margin-left: 30px;
+             max-width: 300px;
+             line-height: 15px;
          }
          header button {
              margin-top: 30px;
              width: 160px;
              height: 35px;
              margin: 1px;
-             margin-left: 30px;
          }
          header .image {
              position: absolute;
              top: 50px;
              right: 50px;
-             width: 200px;
-             height: 20px;
+             width: 250px;
+             height: 300px;
          }
          header .image2 {
              top: 350px;
@@ -164,18 +162,17 @@
          }
          header p {
              font-size: 8px;
+             max-width: 200px;
          }
          header button {
              margin-top: 30px;
-             width: 160px;
-             height: 35px;
-             margin: 1px;
+             max-width: 120px;
          }
          header .image {
              position: absolute;
-             top: 50px;
-             right: 50px;
-             width: 100px;
+             top: 80px;
+             right: 15px;
+             width: 150px;
              height: 20px;
          }
          header .image2 {
@@ -191,14 +188,16 @@
      /* main */
      
      main {
-         width: 1200px;
+         max-width: 1200px;
+         width: 100%;
          border-radius: 0 0 30px 0;
          background-color: #F3F9FF;
          min-height: 420px;
      }
      
      main .container {
-         width: 1000px;
+         max-width: 1000px;
+         width: 100%;
      }
      
      main .container {
@@ -208,7 +207,8 @@
      
      main .container video {
          border-radius: 32px;
-         min-width: 300px;
+         max-width: 300px;
+         width: 100%;
          min-height: 300px;
          cursor: pointer;
      }
@@ -274,9 +274,6 @@
      }
      
      @media(max-width:1250px) {
-         main {
-             width: 100%;
-         }
          main p {
              font: SFProText-Regular;
              color: #123158;
@@ -306,18 +303,8 @@
      }
      
      @media (max-width:800px) {
-         main .container {
-             margin: auto;
-             width: 100%;
-         }
-         main .container video {
-             margin-right: 0px;
-         }
          main .card-body {
              padding-left: 0px;
-         }
-         main .card-body {
-             padding-top: -10px;
          }
          main h2 {
              color: #123158;
@@ -481,6 +468,10 @@
          padding: 240px 0 84px 0;
      }
      
+     .tree-group .card .row {
+         width: 100%;
+     }
+     
      section .tree-group .card {
          background-color: #FFF;
          border: none;
@@ -489,7 +480,8 @@
      section .tree-group .cards {
          background-color: #F3F9FF;
          border-radius: 0 32px 32px 0;
-         width: 686px;
+         max-width: 686px;
+         width: 100%;
          height: 466px;
      }
      
@@ -529,8 +521,7 @@
      @media (max-width:800px) {
          .tree-group .row img {
              position: static;
-             width: 438px;
-             height: 508px;
+             max-width: 320px;
          }
          .tree-group .row .card-body {
              padding-top: 50px;
@@ -795,11 +786,13 @@
      @media(max-width:500px) {
          .information #input {
              width: 300px;
-             margin-left: -50px;
+             margin-left: 0px;
          }
          .information #kirim {
+             position: relative;
+             top: -20px;
              width: 100px;
-             left: 120px;
+             left: 0px;
          }
      }
      /* .footer */
