@@ -4,8 +4,37 @@
          scroll-behavior: smooth;
      }
      
-     nav {
+     .navbar.navbar-expand-lg {
          background-color: #120F60;
+         width: 100%;
+         z-index: 1;
+         transition: .6s;
+     }
+
+     .navbar.navbar-expand-lg.sticky {
+        position: fixed;
+        background-color: #fefeff;
+        box-shadow: 1px 1px 3px #ccc;
+     }
+
+     .navbar-toggler-icon {
+        background-color: #fefeff;
+        border-radius: 3px;
+     }
+
+     .navbar.navbar-expand-lg.sticky li:hover {
+        background: #3E64FF;
+        transition: .3s;
+        color: #fefeff;
+        border-radius: 5px;
+     }
+
+     .navbar.navbar-expand-lg.sticky a{
+        color: #120F60;
+     }
+
+     .navbar.navbar-expand-lg.sticky a:hover{
+        color: #fefeff;
      }
      
      nav a {
@@ -36,40 +65,23 @@
      
      header {
          background-color: #120F60;
-         height: 650px;
      }
      
      header .container {
-         width: 100%;
          max-width: 1000px;
      }
      
      header h1 {
          font: PublicSans-Bold;
-         font-size: 50px;
-         padding-top: 173px;
          color: #fff;
-         text-align: left;
-         line-height: 65px;
-         letter-spacing: -0.5px;
-         max-width: 496px;
-         width: 100%;
      }
      
      header p {
          font: SFProText-Regular;
-         color: #ccc;
-         font-size: 16px;
-         padding-top: 24px;
-         text-align: left;
-         letter-spacing: 0.5px;
-         line-height: 29px;
-         max-width: 496px;
-         width: 100%;
+          color: #ccc;
      }
      
      header button {
-         margin-top: 30px;
          font: SFProText-Bold;
          border: 1px solid #3E64FF;
          border-radius: 28px;
@@ -78,9 +90,6 @@
          height: 100%;
          background-color: #120F60;
          color: #fff;
-         font-size: 14px;
-         letter-spacing: 0.5px;
-         line-height: 17px;
      }
      
      header button:focus {
@@ -92,13 +101,6 @@
          background-color: #3E64FF;
      }
      
-     header .image {
-         max-width: 400px;
-         width: 100%;
-         max-height: 654px;
-         margin-top: 63px;
-     }
-     
      .float-left svg {
          transform: rotate(180deg);
          color: #ccc;
@@ -107,102 +109,21 @@
          cursor: pointer;
      }
      
-     @media(max-width:992px) {
-         header {
-             height: 700px;
-         }
-     }
-     
      @media (max-width:850px) {
-         header {
-             height: 400px;
-         }
-         header h1 {
-             font-size: 30px;
-             line-height: 40px;
-             padding-top: 80px;
-         }
-         header p {
-             font-size: 8px;
-             max-width: 300px;
-             line-height: 15px;
-         }
-         header button {
-             margin-top: 30px;
-             width: 160px;
-             height: 35px;
-             margin: 1px;
-         }
-         header .image {
-             position: absolute;
-             top: 50px;
-             right: 50px;
-             width: 250px;
-             height: 300px;
-         }
-         header .image2 {
-             top: 350px;
-         }
-         .float-left svg {
-             transform: rotate(180deg);
-             color: #ccc;
-             position: relative;
-             top: 10px;
+         .image {
+            display: none;
          }
      }
-     
-     @media (max-width:580px) {
-         header h1 {
-             font-size: 20px;
-             line-height: 30px;
-             padding-top: 80px;
-         }
-         header .card-body {
-             width: 300px;
-         }
-         header p {
-             font-size: 8px;
-             max-width: 200px;
-         }
-         header button {
-             margin-top: 30px;
-             max-width: 120px;
-         }
-         header .image {
-             position: absolute;
-             top: 80px;
-             right: 15px;
-             width: 150px;
-             height: 20px;
-         }
-         header .image2 {
-             top: 350px;
-         }
-         .float-left svg {
-             transform: rotate(180deg);
-             color: #ccc;
-             position: relative;
-             top: 10px;
-         }
-     }
+
      /* main */
-     
      main {
-         max-width: 1200px;
-         width: 100%;
          border-radius: 0 0 30px 0;
          background-color: #F3F9FF;
-         min-height: 420px;
      }
      
      main .container {
          max-width: 1000px;
          width: 100%;
-     }
-     
-     main .container {
-         padding-top: 60px;
-         margin-left: 170px;
      }
      
      main .container video {
@@ -217,29 +138,14 @@
          outline: none;
      }
      
-     main .card-body {
-         padding-top: 40px;
-     }
-     
      main h2 {
          color: #123158;
-         font-size: 32px;
-         letter-spacing: -0.5px;
-         line-height: 38px;
-         text-align: left;
-         font-weight: 700;
      }
      
      main p {
          font: SFProText-Regular;
          color: #123158;
-         font-size: 14px;
-         letter-spacing: 0.5px;
-         line-height: 17px;
          opacity: 0.8;
-         width: 493px;
-         text-align: left;
-         padding-top: 16px;
      }
      
      main h6 {

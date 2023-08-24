@@ -1,3 +1,5 @@
+const navbar = document.querySelector(".navbar");
+
 const image = document.querySelector("header .image");
 
 const tombMenu = document.querySelector(".tombMenu");
@@ -5,6 +7,10 @@ tombMenu.addEventListener("click", () => {
     image.classList.toggle("image2");
 })
 
+// navbar sticky
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle("sticky", scrollY > 30);
+})
 
 // bagian persyaratan
 
